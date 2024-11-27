@@ -10,10 +10,6 @@ Output Format:
 Print an integer representing the diameter of the binary tree.
 Example:
 Input:
-[1, 2, 3, 4, 5, -1, -1, -1, -1, 6, 7]
-Output:
-5
-Input:
 [1, 2, 3, 4, 5, -1, 6]
 Output:
 5
@@ -35,18 +31,18 @@ Output Format:
 2.	At the end, print the list of remaining tasks in descending order of priority.
 Example:
 Input:
-6
-ADD Task1 10
-ADD Task2 15
-ADD Task3 5
+5
+ADD Task1 30
+ADD Task2 40
+ADD Task3 20
 GET
-ADD Task4 20
+ADD Task4 50
 GET
 
 Output:
 Task2
 Task4
-Remaining tasks: [('Task1', 10), ('Task3', 5)]
+Remaining tasks: [('Task1', 30), ('Task3', 20)]
 
 
 Question 3: Merge K Sorted Arrays Using Min Priority Queue
@@ -63,12 +59,13 @@ Output Format
 •	A single line containing the merged sorted array.
 
 Example Input
-3
-1 4 7
-2 5 8
-3 6 9
+4
+2 3 5
+3 4 6
+2 3 7
+4 5 8 
 Example Output
-Merged Array: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Merged Array: [2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 7, 8]
  
 Question 4: Schedule Tasks with Deadlines Using Max Priority Queue
 You are given N tasks, each with a profit and a deadline. Write a Python program to schedule the tasks such that the maximum profit is achieved, using a Max Priority Queue.
@@ -82,14 +79,15 @@ Output Format
 2.	The list of scheduled tasks in the order they are executed.
 
 Example Input
-4
-100   2
-19   1
-27   2
-25   1
+5
+50   2
+60   1
+70   2
+80   1
+90   3
 Example Output
-Maximum Profit: 127
-Scheduled Tasks: [100, 27]
+Maximum Profit: 240
+Scheduled Tasks: [90, 80, 70]
 Explanation
 •	Input represents 4 tasks with (profit, deadline) as (100, 2), (19, 1), (27, 2), (25, 1).
 •	Using a Max Priority Queue, tasks with higher profit are prioritized while ensuring deadlines are respected:
